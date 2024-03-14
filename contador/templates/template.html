@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dados do Sensor</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Dados do Sensor</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Valor</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Sensor</td>
+                    <td>{{ dados.sensor }}</td>
+                </tr>
+                <tr>
+                    <td>Botão</td>
+                    <td>{{ dados.botao }}</td>
+                </tr>
+                <tr>
+                    <td>Liga Robô</td>
+                    <td>{{ dados.liga_robo }}</td>
+                </tr>
+                <tr>
+                    <td>Reset Contador</td>
+                    <td>{{ dados.reset_contador }}</td>
+                </tr>
+                <tr>
+                    <td>Valor Contagem</td>
+                    <td>{{ dados.valor_contagem }}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
